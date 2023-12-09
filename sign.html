@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="sign.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="style-signin.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ 
+     <title>sign</title>
+</head>
+<body>
+    <div class="header">
+        <!--navbar-->
+        <div class="wrap">
+            <header>
+                <div class="logo">
+                    <h1 style="color:rgb(0, 0, 0);">PIZZA <span
+                        style="color: rgb(255, 0, 76); font-weight:1 ;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; "><span
+                            style="border: 3px solid rgb(0, 0, 0); padding:0px 10px; border-radius: 50%;">A</span>MANDA</span>
+                </h1>
+                </div>
+
+                <nav>
+                    <div class="toggl">
+                        <!-- -------------------offcanvas--------------------------- -->
+                        <button class="btn btn-primary" style=" margin-top:-60px ; 
+                      font-size:1em;
+                      background:transparent;
+                      border: none;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"> <i class='bx bx-menu'></i></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            style="background: rgb(106, 104, 104);  width: 200px;"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Offcanvas <span style="color:aqua;">right</span> </h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+
+                                <a href="index.html" class="active">Home</a></li>
+                                <a href="Contact.html">Contact</a>
+                                <a href="#">Corse</a>
+                                <a href="sign.html">Sign in</a>
+                                <a href="#">Vard</a>
+
+                            </div>
+                            <!-- --------------------end-------------------------- -->
+                        </div>
+                    </div>
+                    <ul class="link">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                        <li><a href="#">Corse</a></li>
+                        <li><a href="sign.html">Sign in</a></li>
+                        <li><a href="#">Vard</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+
+    <div class="box">
+        <span class="borderline"></span>
+
+        <h2>Sign in</h2>
+        <div class="inputbox">
+            <input type="text" required="required">
+            <span>Username</span>
+            <i></i>
+        </div>
+        <div class="inputbox">
+            <input type="password" required="required">
+            <span>password</span>
+            <i></i>
+        </div>
+        <div class="links">
+            <a href="#">Forgot password </a>
+            <a href="#">Sign up</a>
+        </div>
+        <input type="submit" value="Login">
+
+    </div>
+    <!-------------- bootstrap js ---------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-------------- bootstrap js ----------------> 
+</body>
+</html>

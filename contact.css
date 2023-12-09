@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(180deg, rgb(156, 0, 47), black, rgb(156, 0, 47), black,rgb(156, 0, 47), black, rgb(156, 0, 47), black, rgb(156, 0, 47));
+}
+
+.background h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 1px;
+    transition: 1s;
+    margin-top: 150px;
+}
+
+.background h2:hover {
+    color: rgb(133, 133, 133);
+    transform: scale(1.1);
+}
+
+.background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.551), rgba(0, 0, 0, 0.551)), url(img/serjan-midili--9LB0GKPF0o-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.background .shado{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(black,rgba(0, 0, 0, 0));
+}
+
+.logo h1 {
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+    border-radius: 15px 0 15px 0;
+    padding: 5px 20px;
+    background: rgb(121, 121, 121);
+    transition: 2s;
+}
+
+.logo h1:hover {
+    background-color: transparent;
+}
+
+
+.header {
+    width: 100%;
+    height: 100%;
+    min-height: 60vh;
+}
+
+.wrap {
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 10px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav .toggl {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    background-color: transparent;
+    display: none;
+}
+
+.toggl i {
+    font-size: 2em;
+    text-align: center;
+    color: rgb(255, 0, 76);
+    transition: .5s;
+    z-index: 4;
+}
+
+.toggl i:hover {
+    z-index: 5;
+    color: rgb(188, 0, 56);
+}
+
+nav .link {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    bottom: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: transparent;
+    z-index: 3;
+    display: flex;
+    list-style-type: none;
+    padding-right: 10px;
+    justify-content: space-between;
+    transition: .4s;
+}
+
+.link .active {
+    color: rgb(255, 0, 76);
+}
+
+.link a:hover {
+    color: rgb(255, 0, 76);
+    transform: scale(1.1);
+}
+
+.offcanvas-body a {
+    color: rgb(11, 13, 13);
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    border: solid 1px black;
+    width: 120px;
+    margin: 30px 25px;
+    font-size: 1.2em;
+    height: 40px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.offcanvas-body a:hover {
+    color: rgb(255, 0, 76);
+    box-shadow: 10px 5px 10px, -10px -5px 10px rgb(255, 0, 76);
+}
+
+nav .link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align: center;
+    transition: .4s;
+}
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+    border: solid black;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+span h5{
+    color: rgb(255, 255, 255);
+}
+
+span p {
+    color: rgb(110, 110, 110);
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .bx {
+    font-size: 28px;
+    color: aqua;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    min-width: 350px;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    background: transparent;
+    color: rgb(163, 163, 163);
+    border: 1px solid rgb(255, 0, 76);
+    transition: .6s;
+}
+
+.contact-col input:hover,
+.contact-col textarea:hover{
+    background:rgba(255, 0, 76, 0.193) ;
+}
+
+form button {
+    border: solid 1px;
+    padding: 5px 10px;
+    color:aqua;
+    background: transparent;
+    transition: .4s;
+}
+
+form button:hover {
+    color: rgb(0, 0, 0);
+    background: aqua;
+    border: solid 1px aqua;
+}
+
+/* ---------------------end header--------------------- */
+@media(max-width:930px) {
+    nav .toggl {
+        display: flex;
+    }
+
+    .click {
+        top: 45px;
+    }
+
+    .click span {
+        position: absolute;
+        margin-top: 12px;
+    }
+
+    .click span:first-child {
+        transform: rotate(-40deg);
+    }
+
+    .click span:nth-child(2) {
+        opacity: 0;
+        margin: 0;
+    }
+
+    .click span:last-child {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    nav .link {
+        position: absolute;
+        top: 900px;
+        right: -100%;
+        bottom: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(87, 86, 89);
+        z-index: 3;
+        box-shadow: 10px 23px 30px black, -10px 23px 30px black;
+        transition: .2s;
+        padding-top: 40px;
+    }
+
+    nav .link {
+        display: none;
+        text-align: center;
+    }
+
+    nav .link a {
+        border: 1px solid black;
+        width: 150px;
+    }
+
+    nav .link a:hover {
+        box-shadow: 10px 5px 20px, -10px -5px 20px;
+    }
+
+    nav .link.open {
+        right: 0;
+    }
+
+    .logo h1 {
+        font-size: 1.6em;
+
+    }
+}
